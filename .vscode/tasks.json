@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Test",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "test_example.cpp",
+                "-o",
+                "test_example",
+                "-I/opt/homebrew/Cellar/googletest/1.16.0/include", // Make sure this points to the correct include directory
+                "-L/opt/homebrew/Cellar/googletest/1.16.0/lib", // Ensure this points to the correct library directory
+                "-lgtest",
+                "-lgtest_main",
+                "-pthread"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build and test with GoogleTest"
+        }
+    ]
+}
+// and name the cpp file as test_example.cpp

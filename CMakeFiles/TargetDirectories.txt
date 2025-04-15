@@ -1,0 +1,3 @@
+/Users/bangtansistu/farzana_maam_lab/CMakeFiles/test_example.dir
+/Users/bangtansistu/farzana_maam_lab/CMakeFiles/edit_cache.dir
+/Users/bangtansistu/farzana_maam_lab/CMakeFiles/rebuild_cache.dir
